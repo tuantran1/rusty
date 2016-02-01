@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="3.0"
+	client="site"
+	method="upgrade">
+	<name>Google Ads</name>
+	<author>Gia Nguyen</author>
+	<creationDate>July 2006</creationDate>
+	<copyright>Copyright (C) 2005 - 2013 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<version>3.0.0</version>
+	<files>
+		<filename module="mod_googleads">mod_googleads.php</filename>
+		<folder>tmpl</folder>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_googleads.xml</filename>
+	</files>
+	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_FOLLOWUS" />
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field name="googletag-define" type="textarea" default="" label="Enter Google Tag to define" description="Enter Google Tag to define" rows="5" filter="raw"/>
+				<field name="googletag-display" type="textarea" default="" label="Enter Google Tag to display" description="Enter Google Tag to display" rows="5" filter="raw"/>
+			</fieldset>			
+		</fields>
+	</config>
+</extension>
